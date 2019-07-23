@@ -2,6 +2,7 @@
  
  def prime?(n)
    num = n.abs
+  false if num < 2
    is_prime = true
    range = 2..(Math.sqrt(num))
    for number in range do
